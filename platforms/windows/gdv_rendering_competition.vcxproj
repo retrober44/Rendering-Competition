@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{70A49527-59F2-4B07-8D5A-87C3D94FB802}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectName>gdv_rendering_competition</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="shared_build_settings.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="shared_build_settings.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\gdv_rendering_competition\source\core\Bitmap.cpp" />
+    <ClCompile Include="..\..\source\gdv_rendering_competition\source\core\Camera.cpp" />
+    <ClCompile Include="..\..\source\gdv_rendering_competition\source\core\Program.cpp" />
+    <ClCompile Include="..\..\source\gdv_rendering_competition\source\core\Shader.cpp" />
+    <ClCompile Include="..\..\source\gdv_rendering_competition\source\core\Texture.cpp" />
+    <ClCompile Include="..\..\source\gdv_rendering_competition\source\main.cpp" />
+    <ClCompile Include="..\..\source\common\thirdparty\glew\src\glew.c" />
+    <ClCompile Include="platform_windows.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\source\gdv_rendering_competition\resources\fragment-shader.txt" />
+    <Text Include="..\..\source\gdv_rendering_competition\resources\vertex-shader.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\bee_nest_top.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\birch_planks.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\blackstone_top.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\black_stained_glass.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\blue_ice.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\brain_coral_block.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\bricks.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\brown_concrete_powder.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\coarse_dirt.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\cobblestone.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\end_stone.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\granite.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\gras.jpg" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\gras.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\gras2.jpg" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\grass_block_top.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\grass_block_top_green.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\oak_log.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\oak_planks.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\podzol_top.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\polished_andesite.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\prismarine_bricks.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\stone.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\stone_bricks.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\terracotta.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\water_overlay.png" />
+    <Image Include="..\..\source\gdv_rendering_competition\resources\wooden-crate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\gdv_rendering_competition\source\core\Bitmap.h" />
+    <ClInclude Include="..\..\source\gdv_rendering_competition\source\core\Camera.h" />
+    <ClInclude Include="..\..\source\gdv_rendering_competition\source\core\Program.h" />
+    <ClInclude Include="..\..\source\gdv_rendering_competition\source\core\Shader.h" />
+    <ClInclude Include="..\..\source\gdv_rendering_competition\source\core\Texture.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

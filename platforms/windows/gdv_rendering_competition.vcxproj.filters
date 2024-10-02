@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{99b8bc00-eafd-4fc0-9f1c-e13f519249b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{e5fcabed-d60f-40b4-b87f-aa83b624adf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{1134d475-c4f8-45ca-9697-d447037cbb8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core">
+      <UniqueIdentifier>{13710458-7fe3-4eea-b3e2-18830915e250}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="platform_windows.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\thirdparty\glew\src\glew.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\gdv_rendering_competition\source\main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\gdv_rendering_competition\source\core\Bitmap.cpp">
+      <Filter>source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\gdv_rendering_competition\source\core\Camera.cpp">
+      <Filter>source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\gdv_rendering_competition\source\core\Program.cpp">
+      <Filter>source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\gdv_rendering_competition\source\core\Shader.cpp">
+      <Filter>source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\gdv_rendering_competition\source\core\Texture.cpp">
+      <Filter>source\core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\source\gdv_rendering_competition\resources\fragment-shader.txt">
+      <Filter>resources</Filter>
+    </Text>
+    <Text Include="..\..\source\gdv_rendering_competition\resources\vertex-shader.txt">
+      <Filter>resources</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\wooden-crate.jpg">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\bee_nest_top.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\birch_planks.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\black_stained_glass.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\blackstone_top.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\blue_ice.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\brain_coral_block.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\bricks.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\brown_concrete_powder.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\coarse_dirt.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\cobblestone.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\end_stone.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\granite.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\gras.jpg">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\gras.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\gras2.jpg">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\grass_block_top.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\grass_block_top_green.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\oak_log.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\oak_planks.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\podzol_top.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\polished_andesite.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\prismarine_bricks.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\stone.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\stone_bricks.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\terracotta.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\..\source\gdv_rendering_competition\resources\water_overlay.png">
+      <Filter>resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\gdv_rendering_competition\source\core\Bitmap.h">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\gdv_rendering_competition\source\core\Camera.h">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\gdv_rendering_competition\source\core\Program.h">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\gdv_rendering_competition\source\core\Shader.h">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\gdv_rendering_competition\source\core\Texture.h">
+      <Filter>source\core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
